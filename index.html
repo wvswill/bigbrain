@@ -61,7 +61,10 @@
       body {
         display: -ms-flexbox;
         display: flex;
-        color: #fff;
+        /*color: #fff;*/
+        background: #544a7d;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ffd452, #544a7d);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #ffd452, #544a7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
         box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
       }
@@ -148,8 +151,7 @@
   </header>
 
   <main role="main" class="inner cover">
-    <h1 class="cover-heading">Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <h1 class="cover-heading text-center">Big Brain</h1>    
     <div class="container">
       <div class="row">
         <div class="col col-lg-12">
