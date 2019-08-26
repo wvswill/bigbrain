@@ -159,7 +159,7 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <main role="main" class="inner cover" style="height: 100%;">
             <div class="embed-responsive embed-responsive-16by9" style="height: 100%;">
-                <iframe class="embed-responsive-item" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/263274b1-1547-476a-b12c-2bb7f90b2b8b">
+                <iframe id="iframe" class="embed-responsive-item" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/263274b1-1547-476a-b12c-2bb7f90b2b8b">
                 </iframe>
             </div>
         </main>
@@ -176,6 +176,9 @@
           document.getElementsByClassName("b-agent-demo_powered_by")[0].style.display = "none";
           document.getElementsByClassName("b-agent-demo_header")[0].style.display = "none";
           document.getElementsByClassName("b-agent-demo_result")[0].style.top = "0px";
+        });
+        $('iframe').on('load', function() {
+            console.log('Iframe Loaded');
         });
     </script>
 </body>
